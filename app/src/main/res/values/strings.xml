@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string name="enter_location">Enter location</string>
+</resources>
