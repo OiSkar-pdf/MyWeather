@@ -14,6 +14,7 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var ECbutton: Button
     private lateinit var cityNameTextView: TextView
     private lateinit var temperatureTextView: TextView
     private lateinit var weatherDescriptionTextView: TextView
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        ECbutton = findViewById(R.id.extra_cred_button)
         cityNameTextView = findViewById(R.id.city_name_text_view)
         temperatureTextView = findViewById(R.id.temperature_text_view)
         weatherDescriptionTextView = findViewById(R.id.weather_description_text_view)

@@ -57,4 +57,14 @@
         android:layout_marginTop="55dp"
         android:text="Update Weather" />
 
+    <Button
+        android:id="@+id/extra_cred_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="385dp"
+        android:layout_marginEnd="49dp"
+        android:text="Click Me!" />
+
 </RelativeLayout>
