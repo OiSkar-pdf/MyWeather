@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        loadWeatherData("London")
+        loadWeatherData("Scotch Plains")
     }
 
     private fun loadWeatherData(location: String) {
