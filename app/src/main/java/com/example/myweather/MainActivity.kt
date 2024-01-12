@@ -1,6 +1,8 @@
 package com.example.myweather
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -48,10 +50,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        ECbutton.setOnClickListener {
+            switchPage()
+        }
 
         loadWeatherData("Scotch Plains")
     }
 
+    private fun switchPage(){
+        val intent = Intent(this, Extracredit::class.java)
+        startActivity(intent)
+    }
     private fun loadWeatherData(location: String) {
         openWeatherMapService.getCurrentWeatherData(location, apiKey).enqueue(object : Callback<WeatherData> {
             override fun onResponse(call: Call<WeatherData>, response: Response<WeatherData>) {

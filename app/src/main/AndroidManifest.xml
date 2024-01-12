@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppTheme">
         <activity
-            android:name=".extracredit"
+            android:name=".Extracredit"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
